@@ -96,3 +96,14 @@ inputDecimal = (dot) => {
     };
     currNum += dot;
 };
+
+const percent = document.querySelector('.percentage');
+
+percent.addEventListener('click', () => {
+    if (currNum === '0') {
+        currNum = '0';
+    } else {
+        currNum /= 100;
+    }
+    updateScreen(currNum);
+});
