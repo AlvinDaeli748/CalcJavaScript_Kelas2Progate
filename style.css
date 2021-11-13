@@ -1,8 +1,24 @@
+@keyframes gbr {
+    0% {background-image: url(background/one.jpg);}
+    25% {background-image: url(background/two.jpg);}
+    50% {background-image: url(background/three.jpg);}
+    75% {background-image: url(background/four.jpg);}
+    100% {background-image: url(background/one.jpg);}
+}
+
+body {
+   background-image: url(background/one.jpg);
+   background-size: cover;
+   animation-name: gbr;
+   animation-duration: 7s;
+   animation-iteration-count: infinite; 
+}
 .main {
     text-align: center;
     margin: 0 auto;
-    padding-top: 200px;
+    margin-top: 50px;
     width: 400px;
+    box-shadow: 0 15px 50px 0 rgba(0,0,0,0.4), 0 15px 20px 0 rgba(0,0,0,0.2);
 }
 
 .screen {
